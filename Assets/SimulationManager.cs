@@ -7,7 +7,7 @@ public class SimulationManager : MonoBehaviour
 {
     [SerializeField] private int worldSizeSimulation;
     [SerializeField] private GameObject sphere;
-    [SerializeField] private int count;
+    [SerializeField] private int sphereSpawnCount;
     [SerializeField] private Color worldWireColor;
     [SerializeField] private List<ObjectController> sphereControllers;
     public List<ObjectController> SphereControllers => sphereControllers;
@@ -28,7 +28,7 @@ public class SimulationManager : MonoBehaviour
 
     private void GenerateObjects()
     {
-        for (int i = 0; i < count; i++)
+        for (int i = 0; i < sphereSpawnCount; i++)
         {
             GameObject sphere =  Instantiate(this.sphere);
             sphere.transform.position = SpawnPosition();

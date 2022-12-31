@@ -332,7 +332,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   worldSizeSimulation: 6
   sphere: {fileID: 1697224219558066159, guid: 687fc6efbf9f64f48922a59e59ec9034, type: 3}
-  count: 5
+  sphereSpawnCount: 20
   worldWireColor: {r: 1, g: 0.83314455, b: 0, a: 1}
   sphereControllers: []
 --- !u!4 &1435376972
