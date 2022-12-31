@@ -10,6 +10,7 @@ public class SimulationManager : MonoBehaviour
     [SerializeField] private int count;
     [SerializeField] private Color worldWireColor;
     [SerializeField] private List<ObjectController> sphereControllers;
+    public List<ObjectController> SphereControllers => sphereControllers;
     public int maxBoundary => worldSizeSimulation / 2;
     public static SimulationManager instance;
 
@@ -42,5 +43,8 @@ public class SimulationManager : MonoBehaviour
             Random.Range(-maxBoundary + 1, maxBoundary - 1), 
             Random.Range(-maxBoundary + 1, maxBoundary - 1));
     }
+
+
+
 
 }
